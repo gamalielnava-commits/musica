@@ -2,7 +2,7 @@
 import { Album } from './types';
 
 export const COLORS = {
-  background: '#F9F8F6', 
+  background: '#F9F8F6',
   cardBg: '#FFFFFF',
   textMain: '#2D2926',
   textSecondary: '#8E8A84',
@@ -17,7 +17,7 @@ export const INITIAL_ALBUMS: Album[] = [
     title: 'DIADEMAS ESENCIA',
     releaseYear: '2026',
     genre: 'Urban Soul Worship',
-    coverImage: 'https://lh3.googleusercontent.com/d/13GB3Tta7XRAe7sq3i8PtZsFCxhRNuPOP',
+    coverImage: '/assets/diademas-esencia-cover.jpg',
     songs: [
       {
         id: 'esencia-01',
@@ -40,8 +40,7 @@ export const INITIAL_ALBUMS: Album[] = [
     title: 'DIADEMAS WORSHIP',
     releaseYear: 'Febrero 2026',
     genre: 'Urban Worship',
-    // Usamos un placeholder de alta calidad
-    coverImage: 'https://picsum.photos/seed/diademas/1000/1000', 
+    coverImage: '/assets/diademas-worship-cover.jpg',
     songs: [
       {
         id: 'track-01',

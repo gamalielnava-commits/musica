@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="es" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diademas Worship | Sitio Oficial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/index.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, observerOptions);
+
+        const observeElements = () => {
+            document.querySelectorAll('.reveal, .reveal-scale').forEach(el => observer.observe(el));
+        };
+        setInterval(observeElements, 1000);
+    </script>
+<script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
